@@ -15,7 +15,17 @@
 
 body{
     
+} 
+/* display none all with slow transition on hover content or cover  */
+.cover:hover {
+    opacity: 0;
+    transition: all 2s ease;
 }
+.content:hover {
+    opacity: 1;
+    transition: all 2s ease;
+}
+
 .form-control::-moz-placeholder{
    color: #DDDDDD;
    opacity: 1;
