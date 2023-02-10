@@ -66,6 +66,11 @@
                     Berachem.dev
                 </a>
             </li>
+            <li>
+                <a onclick="toggleDescription()"> 
+                    Afficher/ Masquer la description
+                </a>
+            </li>
        </ul>
       
     </div><!-- /.navbar-collapse -->
@@ -90,7 +95,7 @@
           </p>
           <p class="description-image-day" id="description-to-translate"></p>
           <br>
-          <i> Made by <a href="https://berachem.dev/">
+          <i id="bottom-text"> Made by <a href="https://berachem.dev/">
             Berachem MARKRIA</a>
             <br>
             Music by <a href="https://pixabay.com/fr/users/amurich-23822000/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=music&amp;utm_content=9362">Amurich</a>
@@ -110,6 +115,36 @@
     </div>
   </div>
 </body>
+
+<style>
+
+/* make description a little bit smaller in height for phone */
+
+@media only screen and (max-width: 1200px) {
+
+  .title-image-day {
+    font-size: 20px;
+  }
+
+  .description-image-day, 
+  #music-button, audio , .volume-control{
+    display: none;
+  }
+
+  .date {
+    font-size: 15px;
+  }
+  .navbar {
+    display: none;
+  }
+
+
+}
+
+
+
+</style>
+
   <script src="js/jquery-1.10.2.js" type="text/javascript"></script>
 	<script src="js/bootstrap.min.js" type="text/javascript"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
@@ -134,7 +169,7 @@
       audio.autoplay = true;
 
       // create new img at the bottom left corner of the screen
-      document.body.innerHTML += '<img src="images/eye-closed.png" id="closedEye" alt="eye-icon" width="50" height="50" style="position: absolute; bottom: 0; left: 0; z-index: 1000" onclick="toggleDescription()">';
+      document.body.innerHTML += '<img src="images/eye-closed.png" id="closedEye" alt="eye-icon" width="80" height="80" style="position: absolute; bottom: 0; left: 0; z-index: 1000" onclick="toggleDescription()">';
       
     }
   }
@@ -171,6 +206,7 @@
   // Contrôle du volume
   audio.volume = 0.5;
   var volumeControl = document.createElement('input');
+  volumeControl.classList.add('volume-control');
   volumeControl.type = 'range';
   volumeControl.min = 0;
   volumeControl.max = 1;
