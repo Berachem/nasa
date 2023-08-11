@@ -5,10 +5,10 @@
   </head>
   <body>
     <header>
-      <h1>Bienvenue sur Nasa Image of the Day by Berachem MARKRIA</h1>
+      <h1>Bienvenue sur NASA 🚀🇺🇸 Image of the Day by Berachem MARKRIA</h1>
     </header>
     <main>
-      <p>Je suis heureux de vous présenter mon site consacré aux images de la NASA. J'utilise l'API de la NASA pour afficher l'image de la journée et une description associée, ainsi que des informations supplémentaires telles que la date de la photo et un compte à rebours jusqu'à la prochaine image.</p>
+      <p>Je suis heureux de vous présenter mon site consacré aux images de la NASA. J'utilise l'API de la NASA 🚀🇺🇸 pour afficher l'image de la journée et une description associée, ainsi que des informations supplémentaires telles que la date de la photo et un compte à rebours jusqu'à la prochaine image.</p>
       <p>Mon objectif est de susciter l'intérêt pour la science en présentant des images incroyables de la NASA, de la Terre et de l'espace.</p>
       <h2>Technologies utilisées</h2>
       <ul>
